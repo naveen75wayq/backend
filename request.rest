@@ -1,0 +1,36 @@
+###
+#Register user
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "username" : "nav",
+    "email" : "test2@gmail.com",
+    "password" : "root0123"
+}
+
+###
+# Sign in user
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+    "email" : "test2@gmail.com",
+    "password" : "root0123"
+}
+
+### Logout
+GET http://localhost:3000/logout
+Content-Type: application/json
+
+### Get all users list
+GET http://localhost:3000/users
+Content-Type: application/json
+
+### 
+DELETE http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "id" : "65b8a8a1d23dc3b7003e6df7"
+}
